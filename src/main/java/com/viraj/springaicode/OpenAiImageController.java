@@ -5,9 +5,13 @@ import org.springframework.ai.image.ImageModel;
 import org.springframework.ai.image.ImagePrompt;
 import org.springframework.ai.image.ImageResponse;
 import org.springframework.ai.openai.*;
+import org.springframework.util.MimeType;
+import org.springframework.util.MimeTypeUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.swing.plaf.PanelUI;
 
@@ -35,5 +39,12 @@ public  String genImage(@PathVariable String Query){
     return imageResponse.getResult().getOutput().getUrl();
 
 }
+public String describe(@RequestParam String query, @RequestParam MultipartFile file){
+    chatClient.prompt()
+            .user(us ->us.text(query)
+                    .media(MimeTypeUtils.IMAGE_JPEG,file.getResource()))
+            .call()
+            .content();
+    return "";
 
-}
+}}
