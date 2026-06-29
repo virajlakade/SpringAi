@@ -1,0 +1,31 @@
+
+    "title": "Samsung Galaxy S25",
+    "description": "Premium Android smartphone with AI-powered features and high-performance camera.",
+    "price": 74999,
+    "category": "Smartphone",
+    "features": "6.7-inch AMOLED Display, 50MP Triple Camera, 5000mAh Battery, 5G Support, AI Assistant"
+
+    "title": "Apple AirPods Pro 2",
+    "description": "Wireless earbuds with active noise cancellation and immersive sound.",
+    "price": 24999,
+    "category": "Audio",
+    "features": "Active Noise Cancellation, Transparency Mode, Spatial Audio, USB-C Charging, Water Resistant"
+
+    "title": "Dell Inspiron 15",
+    "description": "Powerful laptop for students and professionals with Intel Core i7 processor.",
+    "price": 68999,
+    "category": "Laptop",
+    "features": "Intel Core i7, 16GB RAM, 512GB SSD, 15.6-inch Full HD Display, Windows 11"
+
+    "title": "Sony Bravia 55-inch 4K TV",
+    "description": "Smart TV with ultra-HD resolution and HDR support.",
+    "price": 59999,
+    "category": "Television",
+    "features": "4K UHD Resolution, HDR Support, Google TV, Dolby Audio, Voice Control"
+
+    "title": "boAt Nirvana Ion",
+    "description": "Affordable true wireless earbuds with long battery life.",
+    "price": 2499,
+    "category": "Audio",
+    "features": "120 Hours Battery Backup, ENC Calling, Bluetooth 5.3, Fast Charging, IPX4 Water Resistance"
+
