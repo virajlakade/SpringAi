@@ -23,7 +23,14 @@ public class OpenAiImageController {
     }
     @GetMapping("image/{Query}")
 public  String genImage(@PathVariable String Query){
-    ImagePrompt imagePrompt=new ImagePrompt(Query);
+    ImagePrompt imagePrompt=new ImagePrompt(Query, OpenAiImageOptions.builder()
+            .quality("hd")
+            .height(1024)
+            .width(1024)
+            .N(1)
+            .style("natural")
+
+            .build());
     ImageResponse imageResponse=openAiImageMode.call(imagePrompt);
     return imageResponse.getResult().getOutput().getUrl();
 
